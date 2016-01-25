@@ -1,6 +1,8 @@
 # dumpster
 Kingsburg Social Network project.
 
-#members
-scott sheffield
-geekwise.scott.sheffield@gmail.com
+
+### members
+Colton Brockett <geekwise.colton.brockett@gmail.com>
+scott sheffield <geekwise.scott.sheffield@gmail.com>
+
