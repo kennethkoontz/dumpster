@@ -1,5 +1,5 @@
 # dumpster
 Kingsburg Social Network project.
 
-##members
+### members
 Colton Brockett <geekwise.colton.brockett@gmail.com>
