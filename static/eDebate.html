@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <base href="https://dumpstr-geekwisescottsheffield.c9users.io/static/">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Dumpstr - eDebate</title>
+   <link rel="stylesheet" href="css/eDebate.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+<!--<body>-->
+    
+<!--<div role="navigation" id="reactiveNav" class="navbar navbar-default">-->
+<!--   <ul class="nav">-->
+<!--       <li>-->
+<!--           <div  role="presentation" id="navSection1" class="nav col-xs-4">-->
+<!--               <h5>VOTE ON THE NEXT TOPIC</h5>-->
+
+<!--               <div class="input-group-btn">-->
+<!--                   <button id="optOne" class="btn btn-default" type="button">Option One</button>-->
+<!--                   <button id="optTwo" class="btn btn-default" type="button">Option Two</button>-->
+<!--               </div>-->
+
+<!--           </div>-->
+<!--       </li>-->
+
+<!--       <li>-->
+<!--           <div id="navSection2" class="nav col-xs-4">-->
+<!--               <h5>Current Topic:</h5>-->
+<!--               <h3>Somthing Something Darkside</h3>-->
+<!--           </div>-->
+<!--       </li>-->
+
+<!--       <li>-->
+<!--           <div id="navSection3" class="nav col-xs-4">-->
+<!--               <div class="input-group">-->
+<!--                   <input type="text" class="form-control" placeholder="suggest a topic">-->
+<!--                   <div class="input-group-btn">-->
+<!--                       <button class="btn btn-default" type="button">submit</button>-->
+<!--                   </div>-->
+<!--               </div>-->
+<!--           </div>-->
+<!--       </li>-->
+<!--   </ul>-->
+<!--</div>-->
+
+<!--</body>-->
+<body>
+
+<!--head banner logo navigation banner-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-4 logo text-center">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <header class="col-xs-8 hdr">
+            <nav class="navbar navbar-static-top text-right">
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav text-right">
+                        <li class="active"><a href="#">myAccount <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li><a href="#">e-Meetups</a></li>
+                        <li><a href="#">Dumpstr News</a></li>
+                        <li><a href="#">About Dumpster</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class="row banner">
+        <p class="text-center downess">Down in the Dumps? GOOD</p>
+    </div>
+</div>
+
+
+
+<!--reactive navigation specifically for eDebate-->
+
+<div role="navigation" id="reactiveNav" class="navbar navbar-default navbar-fixed-bottom">
+    <ul class="nav">
+        <li>
+            <div  role="presentation" id="navSection1" class="nav col-xs-4">
+                <h5>VOTE ON THE NEXT TOPIC</h5>
+
+                <div class="input-group-btn">
+                    <button id="optOne" class="btn btn-default" type="button">Option One</button>
+                    <button id="optTwo" class="btn btn-default" type="button">Option Two</button>
+                </div>
+
+            </div>
+        </li>
+
+        <li>
+            <div id="navSection2" class="nav col-xs-4">
+                <h5>Current Topic:</h5>
+                <h3>Something Something Darkside</h3>
+            </div>
+        </li>
+
+        <li>
+            <div id="navSection3" class="nav col-xs-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="suggest a topic">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="button">submit</button>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!--post making HTML-->
+<!--<div class="container-fluid">-->
+    <!--<div class="row makin-post">-->
+        <!--<div class="col-md-4"></div>-->
+        <!--<div class="col-md-4">-->
+            <!--<div class="row add-hei">-->
+                <!--<input class="col-md-10" type="text" placeholder="DUMP DUMP DUMP"/>-->
+            <!--</div>-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-10"></div>-->
+                <!--<div class="col-md-1">-->
+                    <!--<p>(5/7)</p>-->
+                <!--</div>-->
+                <!--<div class="col-md-1">-->
+                    <!--<button>-->
+                        <!--submit-->
+                    <!--</button>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-md-4"></div>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+<!-- posts and a sidebar -->
+
+<div class="container">
+    <div class='col-xs-8' id='feed'>
+        <h1>FEED</h1>
+        <div class='post'><div class='icon'></div><p>Test Post Please Ignore</p><button>dislike</button><button>acknowledge</button><button>like</button><button>comment</button></div>
+        <div class='post'><div class='icon'></div><p>Test Post Please Ignore</p><button>dislike</button><button>acknowledge</button><button>like</button><button>comment</button></div>
+        <div class='post'><div class='icon'></div><p>Test Post Please Ignore</p><button>dislike</button><button>acknowledge</button><button>like</button><button>comment</button></div>
+        <div class='post'><div class='icon'></div><p>Test Post Please Ignore</p><button>dislike</button><button>acknowledge</button><button>like</button><button>comment</button></div>
+        <div class='post'><div class='icon'></div><p>Test Post Please Ignore</p><button>dislike</button><button>acknowledge</button><button>like</button><button>comment</button></div>
+        <div class='post'><div class='icon'></div><p>Test Post Please Ignore</p><button>dislike</button><button>acknowledge</button><button>like</button><button>comment</button></div>
+    </div>
+
+    <div class="col-xs-4 mar">
+        <div class="row text-center">
+            <img src="http://www.garlic.com/wp-content/uploads/2015/04/customer-service-icon-150x150.jpg"></img>
+        </div>
+        <div class="row text-center">
+            <p>username</p>
+            <p>online | offline</p>
+            <p>cheevos</p>
+            <p>dumps: 777</p>
+        </div>
+    </div>
+</div>
+
+<!--<div class="container">-->
+    <!---->
+<!--</div>-->
+
+<footer>
+    <div id="footerBuffer">
+        footer buffer
+    </div>
+</footer>
+
+</body>
+</html>
