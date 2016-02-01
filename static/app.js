@@ -3,13 +3,17 @@ angular
     .config(function($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise("/feed");
         $stateProvider
-            .state('feed', {
-              url: "/feed",
-              templateUrl: "feed.html"
+            .state('admin', {
+                url:"/admin",
+                templateUrl:"admin.html"
             })
             .state('eDebate', {
                 url:"/eDebate",
                 templateUrl:"eDebate.html"
+            })
+            .state('feed', {
+              url: "/feed",
+              templateUrl: "feed.html"
             })
             .state('login', {
                 url:"/login",
