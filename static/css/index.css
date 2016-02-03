@@ -1,0 +1,19 @@
+.ad {
+    height: 100px;
+    width: 100%;
+    background-color: gray;
+    text-align: center;
+    
+}
+
+.icon{
+    height:90px;
+    width:90px;
+    background-color:gray;
+    margin-bottom: 10px;
+    
+}
+
+.post {
+    margin-bottom: 20px;
+}

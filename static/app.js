@@ -34,5 +34,5 @@ angular
             .state('user', {
                 url:"/user",
                 templateUrl:"user.html"
-            })
+            });
     });
