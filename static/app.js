@@ -5,40 +5,49 @@ angular
         $stateProvider
             .state('admin', {
                 url:"/admin",
-                templateUrl:"admin.html"
+                templateUrl:"admin.html",
+                controller:"AdminController"
             })
             .state('eDebate', {
                 url:"/eDebate",
-                templateUrl:"eDebate.html"
+                templateUrl:"eDebate.html",
+                controller:"eDebateController"
             })
             .state('feed', {
               url: "/feed",
-              templateUrl: "feed.html"
+              templateUrl: "feed.html",
+              controller:"FeedController"
             })
             .state('login', {
                 url:"/login",
-                templateUrl:"login.html"
+                templateUrl:"login.html",
+                controller:"LoginController"
             })
             .state('news', {
                 url:"/news",
-                templateUrl:"news.html"
+                templateUrl:"news.html",
+                controller:"NewsController"
             })
             .state('PostView', {
                 url:"/postview",
-                templateUrl:"postview.html"
+                templateUrl:"postview.html",
+                controller:"PostViewController"
             })
             .state('signUp', {
                 url:"/signup",
-                templateUrl:"signup.html"
+                templateUrl:"signup.html",
+                controller:"SignUpController"
             })
             
             .state('termsAndAgreements', {
                 url:"/trash_terms_and_garabe_agreements",
-                templateUrl:'terms.html'
+                templateUrl:'terms.html',
+                controller:"TermsController"
             })
             
             .state('user', {
                 url:"/user",
-                templateUrl:"user.html"
+                templateUrl:"user.html",
+                controller:"UserController"
             });
     });
