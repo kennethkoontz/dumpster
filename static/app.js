@@ -31,6 +31,12 @@ angular
                 url:"/signup",
                 templateUrl:"signup.html"
             })
+            
+            .state('termsAndAgreements', {
+                url:"/trash_terms_and_garabe_agreements",
+                templateUrl:'terms.html'
+            })
+            
             .state('user', {
                 url:"/user",
                 templateUrl:"user.html"
