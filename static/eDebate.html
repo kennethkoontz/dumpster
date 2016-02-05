@@ -1,11 +1,7 @@
-<h1>edebate</h1>
-
-<!--reactive navigation specifically for eDebate-->
-
 <div role="navigation" id="reactiveNav" class="navbar navbar-default navbar-fixed-bottom">
     <ul class="nav">
         <li>
-            <div  role="presentation" id="navSection1" class="nav col-xs-4">
+            <div  role="presentation" id="navSection1" class="nav col-xs-4 text-center">
                 <h5>VOTE ON THE NEXT TOPIC</h5>
 
                 <div class="input-group-btn">
@@ -17,14 +13,14 @@
         </li>
 
         <li>
-            <div id="navSection2" class="nav col-xs-4">
+            <div ng-repeat="topic in navigation" id="navSection2" class="nav col-xs-4 text-center">
                 <h5>Current Topic:</h5>
-                <h3>Something Something Darkside</h3>
+                <h3>{{topic.topic}}</h3>
             </div>
         </li>
 
         <li>
-            <div id="navSection3" class="nav col-xs-4">
+            <div id="navSection3" class="nav col-xs-4 text-center">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="suggest a topic">
                     <div class="input-group-btn">
@@ -35,39 +31,3 @@
         </li>
     </ul>
 </div>
-
-    <div class='post'>
-        <div class='icon'></div>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-        magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-        quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-        ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-        dolor in hendrerit in vulputate velit esse molestie consequat,
-        vel illum dolore eu feugiat nulla facilisis at vero eros et
-        accumsan et iusto odio dignissim qui blandit praesent luptatum
-        zzril delenit augue duis dolore te feugait nulla facilisi.
-        Nam liber tempor cum soluta nobis eleifend option congue
-        nihil imperdiet doming id quod mazim placerat facer possim
-        assum.</p>
-        <button class="btn btn-default">dislike</button>
-        <button class="btn btn-default">acknowledge</button>
-        <button class="btn btn-default">like</button>
-        <button class="btn btn-default">comment</button>
-    </div>
-    <div class='post'>
-        <div class='icon'></div>
-        <p>Typi non habent claritatem insitam; est usus legentis
-        in iis qui facit eorum claritatem. Investigationes
-        demonstraverunt lectores legere me lius quod ii legunt saepius.
-        Claritas est etiam processus dynamicus, qui sequitur mutationem
-        consuetudium lectorum. Mirum est notare quam littera gothica,
-        quam nunc putamus parum claram, anteposuerit litterarum formas
-        humanitatis per seacula quarta decima et quinta decima. Eodem
-        modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
-        in futurum.</p>
-        <button class="btn btn-default">dislike</button>
-        <button class="btn btn-default">acknowledge</button>
-        <button class="btn btn-default">like</button>
-        <button class="btn btn-default">comment</button>
-    </div>
