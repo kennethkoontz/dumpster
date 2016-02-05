@@ -1,94 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Dumpstr Admin</title>
-        <meta charset="UTF-8" name='viewport' content='width=device-width'>
-        <link rel="stylesheet" href="css/admin.css.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        <script src='script/script.js'></script>
-    </head>
-    <body>
-         <div class='container-fluid'>
-             <div class="row">
-                 <div class="col-sm-4">
-                     <div class='row'>
-                         <div class="col-sm-6">App Logo</div>
-                         <div class="col-sm-6">App Title</div>
-                     </div>
-                 </div>
-                 <div class="col-sm-4">Banner</div>
-                 <div class="col-sm-4">
-                     <div class='row'>
-                         <div class="col-sm-8">Profile Pic</div>
-                         <div class="col-sm-8">Admin user & status</div>
-                     </div>
-                 </div>
-             </div>
+ 
+ <div class='container-fluid'  ng-app='post' ng-controller='feedController'>
+     <div class="row">
+         <div class="col-sm-4">
              <div class='row'>
-                 <div class="col-sm-8">Calendar</div>
-                 <div class="col-sm-8">Go-to (for calendar)</div>
+                 <div class="col-sm-6">App Logo</div>
+                 <div class="col-sm-6">App Title</div>
              </div>
+         </div>
+         <div class="col-sm-4">Banner</div>
+         <div class="col-sm-4">
              <div class='row'>
-                 <ul class='nav nav-tabs'>
-                   <li role="presentation" class='active'><a href='#'>Phone statics</a></li>
-                   <li role="presentation"><a href='#'>Computer statics</a></li>
-                   <li role="presentation"><a href='#'>Total statics</a></li>
+                 <div class="col-sm-8">Profile Pic</div>
+                 <div class="col-sm-8">Admin user & status</div>
+             </div>
+         </div>
+     </div>
+     <div class='row'>
+         <div class="col-sm-8">Calendar</div>
+         <div class="col-sm-8">Go-to (for calendar)</div>
+     </div>
+     <div class='row'>
+         <ul class='nav nav-tabs'>
+           <li role="presentation" class='active'><a href='#'>Phone statics</a></li>
+           <li role="presentation"><a href='#'>Computer statics</a></li>
+           <li role="presentation"><a href='#'>Total statics</a></li>
+           <li role="presentation"><a href='#'>Etc.</a></li>
+       </ul>
+     </div>
+     <div class='row'>
+         <div class='col-sm-12'>Statics</div>
+     </div>
+     <div class='row'>
+         <div class="col-sm-6">Empty</div>
+         <div class="col-sm-6">
+              <ul class='nav nav-tabs'>
+                   <li role="presentation" class='active'><a href='#'>Today</a></li>
+                   <li role="presentation"><a href='#'>Yesterday</a></li>
+                   <li role="presentation"><a href='#'>Two days ago</a></li>
                    <li role="presentation"><a href='#'>Etc.</a></li>
                </ul>
-             </div>
-             <div class='row'>
-                 <div class='col-sm-12'>Statics</div>
-             </div>
-             <div class='row'>
-                 <div class="col-sm-6">Empty</div>
-                 <div class="col-sm-6">
-                      <ul class='nav nav-tabs'>
-                           <li role="presentation" class='active'><a href='#'>Today</a></li>
-                           <li role="presentation"><a href='#'>Yesterday</a></li>
-                           <li role="presentation"><a href='#'>Two days ago</a></li>
-                           <li role="presentation"><a href='#'>Etc.</a></li>
-                       </ul>
-                 </div>
-             </div>
-             <div class='row'>
-                 <div class="col-sm-6" id='feed'>
-                         <p><h1> YOUR FEED</h1></p>  
-                         <div class='post'><div class='icon'></div><p>Test Post Please Ignore</p><button>dislike</button><button>acknowledge</button><button>like</button><button>comment</button></div>
-                          <div class='post'><div class='icon'></div><p>Test Post Please Ignore</p><button>dislike</button><button>acknowledge</button><button>like</button><button>comment</button></div>
-                           <div class='post'><div class='icon'></div><p>Test Post Please Ignore</p><button>dislike</button><button>acknowledge</button><button>like</button><button>comment</button></div>
-                            <div class='post'><div class='icon'></div><p>Test Post Please Ignore</p><button>dislike</button><button>acknowledge</button><button>like</button><button>comment</button></div>
-                             <div class='post'><div class='icon'></div><p>Test Post Please Ignore</p><button>dislike</button><button>acknowledge</button><button>like</button><button>comment</button></div>
-                              <div class='post'><div class='icon'></div><p>Test Post Please Ignore</p><button>dislike</button><button>acknowledge</button><button>like</button><button>comment</button></div>
-                      </div>
-                 <div class="col-sm-6" id='feed'>
-                     <p><h1>OTHERS FEED</h1></p>  
-                         <div class='post'><div class='icon'></div><p>Test Post Please Ignore</p><button>dislike</button><button>acknowledge</button><button>like</button><button>comment</button></div>
-                          <div class='post'><div class='icon'></div><p>Test Post Please Ignore</p><button>dislike</button><button>acknowledge</button><button>like</button><button>comment</button></div>
-                           <div class='post'><div class='icon'></div><p>Test Post Please Ignore</p><button>dislike</button><button>acknowledge</button><button>like</button><button>comment</button></div>
-                            <div class='post'><div class='icon'></div><p>Test Post Please Ignore</p><button>dislike</button><button>acknowledge</button><button>like</button><button>comment</button></div>
-                             <div class='post'><div class='icon'></div><p>Test Post Please Ignore</p><button>dislike</button><button>acknowledge</button><button>like</button><button>comment</button></div>
-                              <div class='post'><div class='icon'></div><p>Test Post Please Ignore</p><button>dislike</button><button>acknowledge</button><button>like</button><button>comment</button></div>
-                 </div>
-             </div>
-             <div class='row'>
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
-                  <div class="row add-hei">
-                    <input class="col-md-10" type="text" placeholder="DUMP DUMP DUMP"/>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-10"></div>
-                    <div class="col-md-1">
-                      <p>(5/7)</p>
-                      </div>
-                    <div class="col-md-1">
-                      <button>
-                        submit
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4"></div>
+         </div>
+     </div>
+     <div class='row'>
+         <div class="col-sm-6" id='feed' ng-repeat='post in feed'>
+                 <p><h1> YOUR FEED</h1></p>
+                 {{post.title}} - likes: {{post.likes}} - dislikes: {{post.dislikes}}
               </div>
-    </body>
-</html>   
+         <!--<div class="col-sm-6" id='feed'>-->
+         <!--    <p><h1>OTHERS FEED</h1></p>  -->
+         <!--        <div class='post'><div class='icon'></div><p>Test Post Please Ignore</p><button>dislike</button><button>acknowledge</button><button>like</button><button>comment</button></div>-->
+         <!--         <div class='post'><div class='icon'></div><p>Test Post Please Ignore</p><button>dislike</button><button>acknowledge</button><button>like</button><button>comment</button></div>-->
+         <!--          <div class='post'><div class='icon'></div><p>Test Post Please Ignore</p><button>dislike</button><button>acknowledge</button><button>like</button><button>comment</button></div>-->
+         <!--           <div class='post'><div class='icon'></div><p>Test Post Please Ignore</p><button>dislike</button><button>acknowledge</button><button>like</button><button>comment</button></div>-->
+         <!--            <div class='post'><div class='icon'></div><p>Test Post Please Ignore</p><button>dislike</button><button>acknowledge</button><button>like</button><button>comment</button></div>-->
+         <!--             <div class='post'><div class='icon'></div><p>Test Post Please Ignore</p><button>dislike</button><button>acknowledge</button><button>like</button><button>comment</button></div>-->
+         <!--</div>-->
+     </div>
+     <div class='row'>
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div class="row add-hei">
+            <input class="col-md-10" type="text" placeholder="DUMP DUMP DUMP"/>
+          </div>
+          <div class="row">
+            <div class="col-md-10"></div>
+            <div class="col-md-1">
+              <p>(5/7)</p>
+              </div>
+            <div class="col-md-1">
+              <button>
+                submit
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
