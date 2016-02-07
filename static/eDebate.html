@@ -4,9 +4,8 @@
             <div  role="presentation" id="navSection1" class="nav col-xs-4 text-center">
                 <h5>VOTE ON THE NEXT TOPIC</h5>
 
-                <div class="input-group-btn">
-                    <button id="optOne" class="btn btn-default" type="button">Option One</button>
-                    <button id="optTwo" class="btn btn-default" type="button">Option Two</button>
+                <div ng-repeat='option in pickTwo' class="input-group-btn">
+                    <button id="optOne" class="btn btn-default" type="button">{{option.optnOne}} {{option.optnTwo}}</button>
                 </div>
 
             </div>
@@ -15,7 +14,7 @@
         <li>
             <div ng-repeat="topic in navigation" id="navSection2" class="nav col-xs-4 text-center">
                 <h5>Current Topic:</h5>
-                <h3>{{topic.topic}}</h3>
+                <h3>{{topic.current}}</h3>
             </div>
         </li>
 
@@ -37,9 +36,18 @@
     <div ng-repeat='post in feed' class='post'>
         <div  class='icon'></div>
             <p>{{post.text}}</p>
-            <button class="btn btn-default">dislike</button>
-            <button class="btn btn-default">acknowledge</button>
+            
+            <hr>
+                <div ng-repeat='analytics in feed (1)'>
+                    <span>{{analytics.like}} people liked,</span>
+                    <span>{{analytics.acknowledge}} people acknowledged,</span>
+                    <span>{{analytics.dislike}} people disliked,</span>
+                    <span>{{analytics.comment}} comments</span>
+                </div>
+            <hr>
             <button class="btn btn-default">like</button>
+            <button class="btn btn-default">acknowledge</button>
+            <button class="btn btn-default">dislike</button>
             <button class="btn btn-default">comment</button>
     </div>
 </div>
