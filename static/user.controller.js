@@ -1,6 +1,6 @@
 angular
     .module('app')
-    .controller('FeedController', function($scope){
+    .controller('UserController', function($scope){
         $scope.post=[
             {user: 'Garabo', likes: '22', dislikes:'27'},
             {user: 'Trashy', likes: '2', dislikes:'32'},
