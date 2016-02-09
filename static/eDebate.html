@@ -38,11 +38,11 @@
             <p>{{post.text}}</p>
             
             <hr>
-                <div ng-repeat='analytics in feed (1)'>
-                    <span>{{analytics.like}} people liked,</span>
-                    <span>{{analytics.acknowledge}} people acknowledged,</span>
-                    <span>{{analytics.dislike}} people disliked,</span>
-                    <span>{{analytics.comment}} comments</span>
+                <div ng-show='response' ng-repeat='analytics in response'>
+                    <span>{{analytics.like}} people liked,
+                    {{analytics.acknowledge}} people acknowledged,
+                    {{analytics.dislike}} people disliked,
+                    {{analytics.comment}} comments</span>
                 </div>
             <hr>
             <button class="btn btn-default">like</button>
