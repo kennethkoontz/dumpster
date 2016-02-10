@@ -11,34 +11,19 @@
       <div class="col-sm-1"></div>
       
       <div class="col-sm-7 mar" ng-app='post' ng-controller='userController'>
-        <article class="row post">
-          <img class="pro-pic img-circle" src="http://www.garlic.com/wp-content/uploads/2015/04/customer-service-icon-150x150.jpg">
-          <p class="usrnm">User dumped:</p>
-          <p class="post">I have this to say, blah blah blah</p>
-          <div class="futer row"> 
-            <a class="col-sm-8" href="#">(5) Comments</a>
-            
-            <div class="col-sm-4 ratings mar">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Nuvola_filesystems_services-20px.png">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Nuvola_filesystems_services-20px.png">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Nuvola_filesystems_services-20px.png">
-            </div>
-          </article>
-          
-          <article class="row post">
-            <img class="pro-pic" src="http://www.garlic.com/wp-content/uploads/2015/04/customer-service-icon-150x150.jpg">
-            <p class="usrnm">User dumped:</p>
-            <p class="post">I have this to say, blah blah blah</p>
-            <div class="futer row"> 
-              <a class="col-sm-8" href="#">(5) Comments</a>
-              
-              <div class="col-sm-4 ratings mar">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Nuvola_filesystems_services-20px.png">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Nuvola_filesystems_services-20px.png">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Nuvola_filesystems_services-20px.png">
-              </div>
-          </article>
+      
+        <div ng-repeat="post in feed" class="post">
+            <div class="icon"></div>
+            <p>{{post.text}}</p>
+            <hr>
+            <hr>
+            <button class="btn btn-default">like</button>
+            <button class="btn btn-default">acknowledge</button>
+            <button class="btn btn-default">dislike</button>
+            <button class="btn btn-default">comment</button>
         </div>
+       
+      </div>
       
       
       </div>
