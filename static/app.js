@@ -38,16 +38,19 @@ angular
                 templateUrl:"signup.html",
                 controller:"SignUpController"
             })
-            
             .state('termsAndAgreements', {
                 url:"/trash_terms_and_garabe_agreements",
                 templateUrl:'terms.html',
                 controller:"TermsController"
             })
-            
             .state('user', {
                 url:"/user",
                 templateUrl:"user.html",
                 controller:"UserController"
             });
-    });
+    })
+    .run(function($rootScope) {
+        $rootScope.$on('$stateChangeError', function (event, toState, toParams, fromState, fromParams, error) {
+            throw error;
+        });
+    })
