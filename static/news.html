@@ -1,35 +1,13 @@
-<h1>NEWSFEED</h1>
-<hr>
-    <div class='post'>
-        <div class='icon'></div>
-        <a href='#'><p>Good News Everyone!</p></a>
-        <button>dislike</button>
-        <button>acknowledge</button>
-        <button>like</button>
-        <button>comment</button>
-    </div>
-    <div class='post'>
-        <div class='icon'></div>
-        <a href='#'><p>Good News Everyone!</p></a>
-        <button>dislike</button>
-        <button>acknowledge</button>
-        <button>like</button>
-        <button>comment</button>
-    </div>
-    <div class='post'>
-        <div class='icon'></div>
-        <a href='#'><p>Good News Everyone!</p></a>
-        <button>dislike</button>
-        <button>acknowledge</button>
-        <button>like</button>
-        <button>comment</button>
-    </div>
-    <div class='post'>
-        <div class='icon'></div>
-        <a href='#'><p>Good News Everyone!</p></a>
-        <button>dislike</button>
-        <button>acknowledge</button>
-        <button>like</button>
-        <button>comment</button>
-    </div>
-          
+<div>
+    <h1>NEWS</h1>
+        <div ng-repeat="post in news" class="post">
+            <div class="icon"></div>
+            <p>{{post.text}}</p>
+            <hr>
+            <hr>
+            <button class="btn btn-default">like</button>
+            <button class="btn btn-default">acknowledge</button>
+            <button class="btn btn-default">dislike</button>
+            <button class="btn btn-default">comment</button>
+        </div>
+</div>
