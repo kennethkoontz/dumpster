@@ -42,29 +42,32 @@
          </div>
      </div>
      <div class='row'>
-        <div class="col-sm-6">
-            <p><h1> YOUR FEED</h1></p>
-            <div class='post' ng-repeat='feed in yours'>
+        <div class='col-sm-6'>    
+            <p><h1> Your Feed</h1></p>
+            <div class='post' ng-repeat='post in admin'>
                 <div class='icon'></div>
-                User: {{yours.user}} 
-                Acknowledged ({{yours.acknowledged}}) 
-                Likes ({{yours.likes}}) 
-                Dislikes ({{yours.dislikes}})
-                Comment ({{yours.comments}})
+                <p>{{post.text}}</p>
+                <hr>
+                <hr>
+                <button class="btn btn-default">Acknowledged</button>
+                <button class="btn btn-default">Like</button>
+                <button class="btn btn-default">Dislike</button>
+                <button class="btn btn-default">Comment</button>
             </div>    
         </div>
-        <div class="col-sm-6">
-            <p><h1>OTHERS FEED</h1></p>
-            <div class='post' ng-repeat='feed in other'>
-                <div class='icon'></div>    
-                User: {{other.user}} 
-                Acknowledged ({{other.acknowledged}}) 
-                Likes ({{other.likes}}) 
-                Dislikes ({{other.dislikes}})
-                Comment ({{other.comments}})
+        <div class='col-sm-6'>
+             <p><h1> Others Feed</h1></p>
+            <div class='post' ng-repeat='post in admin'>
+                <div class='icon'></div>
+                <p>{{post.text}}</p>
+                <hr>
+                <hr>
+                <button class="btn btn-default">Acknowledged</button>
+                <button class="btn btn-default">Like</button>
+                <button class="btn btn-default">Dislike</button>
+                <button class="btn btn-default">Comment</button>
             </div>
-        </div
-        >
+        </div>
      </div>
      <div class='row'>
         <div class="col-md-4"></div>
