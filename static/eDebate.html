@@ -34,20 +34,20 @@
 <div style='padding-bottom: 70px;'>
     <h1>eDebate</h1>
     <div ng-repeat='post in feed' class='post'>
-        <img src="{{post.profilePic}}"/>
-            <p>{{post.text}}</p>
-            
-            <hr>
-                <div ng-show='response' ng-repeat='analytics in response'>
-                    <span>{{analytics.like}} people liked,
-                    {{analytics.acknowledge}} people acknowledged,
-                    {{analytics.dislike}} people disliked,
-                    {{analytics.comment}} comments</span>
-                </div>
-            <hr>
-            <button class="btn btn-default">like</button>
-            <button class="btn btn-default">acknowledge</button>
-            <button class="btn btn-default">dislike</button>
-            <button class="btn btn-default">comment</button>
+        <img style:'border:1px solid black;' src="{{post.profilePic}}" alt='User Profile'/>
+        <p>{{post.text}}</p>
+        
+        <hr>
+            <div ng-show='response' ng-repeat='analytics in response'>
+                <span>{{analytics.like}} people liked,
+                {{analytics.acknowledge}} people acknowledged,
+                {{analytics.dislike}} people disliked,
+                {{analytics.comment}} comments</span>
+            </div>
+        <hr>
+        <button class="btn btn-default">like</button>
+        <button class="btn btn-default">acknowledge</button>
+        <button class="btn btn-default">dislike</button>
+        <button class="btn btn-default">comment</button>
     </div>
 </div>
