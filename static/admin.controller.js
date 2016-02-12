@@ -6,5 +6,9 @@ angular
             {text: 'BA BA BOOOOM'},
             {text: 'Shoutout to MJ LETS GET RIOGHT INTO THE NEEEEEWWWS'}
         ];
+        
+        $scope.response=[
+            {like: '0', acknowledge: '0', dislike: '0', comment: '0'}
+        ];
     });
     

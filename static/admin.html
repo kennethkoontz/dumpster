@@ -48,11 +48,13 @@
                 <div class='icon'></div>
                 <p>{{post.text}}</p>
                 <hr>
+                    <div ng-show='response' ng-repeat='analytics in response'>
+                        <button class="btn btn-default">{{analytics.acknowledge}} Acknowledged</button>
+                        <button class="btn btn-default">{{analytics.like}} Like</button>
+                        <button class="btn btn-default">{{analytics.dislike}} Dislike</button>
+                        <button class="btn btn-default">{{analytics.comment}} Comment</button>
+                    </div>    
                 <hr>
-                <button class="btn btn-default">Acknowledged</button>
-                <button class="btn btn-default">Like</button>
-                <button class="btn btn-default">Dislike</button>
-                <button class="btn btn-default">Comment</button>
             </div>    
         </div>
         <div class='col-sm-6'>
@@ -61,11 +63,13 @@
                 <div class='icon'></div>
                 <p>{{post.text}}</p>
                 <hr>
+                    <div ng-show='response' ng-repeat='analytics in response'>
+                        <button class="btn btn-default">{{analytics.acknowledge}} Acknowledged</button>
+                        <button class="btn btn-default">{{analytics.like}} Like</button>
+                        <button class="btn btn-default">{{analytics.dislike}} Dislike</button>
+                        <button class="btn btn-default">{{analytics.comment}} Comment</button> 
+                    </div>
                 <hr>
-                <button class="btn btn-default">Acknowledged</button>
-                <button class="btn btn-default">Like</button>
-                <button class="btn btn-default">Dislike</button>
-                <button class="btn btn-default">Comment</button>
             </div>
         </div>
      </div>

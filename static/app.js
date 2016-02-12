@@ -1,7 +1,7 @@
 angular
     .module('app', ['ui.router'])
     .config(function($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise("/feed");
+        $urlRouterProvider.otherwise("/signup");
         $stateProvider
             .state('admin', {
                 url:"/admin",
