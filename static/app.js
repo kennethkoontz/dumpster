@@ -3,32 +3,36 @@ angular
     .config(function($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise("/signup");
         $stateProvider
-            .state('admin', {
+            .state('li.admin', {
                 url:"/admin",
                 templateUrl:"admin.html",
                 controller:"AdminController"
             })
-            .state('eDebate', {
+            .state('li.eDebate', {
                 url:"/eDebate",
                 templateUrl:"eDebate.html",
                 controller:"eDebateController"
             })
-            .state('feed', {
+            .state('li.feed', {
               url: "/feed",
               templateUrl: "feed.html",
               controller:"FeedController"
+            })
+            .state('li',{
+                abstract:true,
+                templateUrl:'loggedin.html'
             })
             .state('login', {
                 url:"/login",
                 templateUrl:"login.html",
                 controller:"LoginController"
             })
-            .state('news', {
+            .state('li.news', {
                 url:"/news",
                 templateUrl:"news.html",
                 controller:"NewsController"
             })
-            .state('PostView', {
+            .state('li.PostView', {
                 url:"/postview",
                 templateUrl:"postview.html",
                 controller:"PostViewController"
@@ -43,7 +47,7 @@ angular
                 templateUrl:'terms.html',
                 controller:"TermsController"
             })
-            .state('user', {
+            .state('li.user', {
                 url:"/user",
                 templateUrl:"user.html",
                 controller:"UserController"
