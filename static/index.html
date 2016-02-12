@@ -10,67 +10,6 @@
     <title>Dumpstr</title>
 </head>
 <body>
-    <div class="container">
-        <div class='row'>
-            <div class='col-sm-12'>
-                <h1>Dumpstr</h1>
-             
-                <button ui-sref="feed" class="btn btn-default">Feed</button>
-                <button ui-sref="news" class="btn btn-default">News</button>
-                <button ui-sref="admin" class="btn btn-default">Admin</button>
-                <button ui-sref="eDebate" class="btn btn-default">eDebate</button>
-                <button ui-sref="user" class="btn btn-default">User</button>
-            </div>
-        </div>
-        <main class='row'>
-            <div class='col-md-3'>
-                <div id="content-slider">
-                    <div id="slider">
-                        <div id="mask">
-                            <ul>
-                                <li id="first" class="firstanimation">
-                                    <img src="images/davis1.jpg"/>
-                                </li>
-                                
-                                <li id="second" class="secondanimation">
-                                    <img src="images/davis2.jpg"/>
-                                </li>
-                                
-                                <li id="third" class="thirdanimation">
-                                    <img src="images/davis3.jpg"/>
-                                </li>
-                                
-                                <li id="fourth" class="fourthanimation">
-                                    <img src="images/davis4.jpg"/>
-                                </li>
-                                
-                                <li id="fifth" class="fifthanimation">
-                                    <img src="images/davis5.jpg"/>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!--<div class="ad"><h1></h1></div>-->
-                <!--<div class="ad"><h1></h1></div>-->
-                <!--<div class="ad"><h1></h1></div>-->
-                <!--<div class="ad"><h1></h1></div>-->
-            </div>
-            
-            <div class='col-md-9'>
-                <div ui-view></div>
-            </div>
-        </main>
-    </div>
-   
-   
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.17/angular-ui-router.js"></script>
-    <script src="app.js"></script>
-    <script src="feed.controller.js"></script>
-    <script src="news.controller.js"></script>
-    <script src="edebate.controller.js"></script>
-    <script src="user.controller.js"></script>
-    <script src="admin.controller.js"></script>
+    <div ui-view></div>
 </body>
 </html>
