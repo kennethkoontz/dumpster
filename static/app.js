@@ -3,6 +3,10 @@ angular
     .config(function($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise("/signup");
         $stateProvider
+            .state('li', {
+                abstract: true,
+                templateUrl: 'loggedin.html'
+            })
             .state('li.admin', {
                 url:"/admin",
                 templateUrl:"admin.html",
@@ -18,15 +22,6 @@ angular
               templateUrl: "feed.html",
               controller:"FeedController as FeedCtrl"
             })
-            .state('li.loggedin',{
-                abstract:true,
-                templateUrl:'loggedin.html'
-            })
-            .state('login', {
-                url:"/login",
-                templateUrl:"login.html",
-                controller:"LoginController as LoginCtrl"
-            })
             .state('li.news', {
                 url:"/news",
                 templateUrl:"news.html",
@@ -37,11 +32,6 @@ angular
                 templateUrl:"postview.html",
                 controller:"PostViewController as PostViewCtrl"
             })
-            .state('signUp', {
-                url:"/signup",
-                templateUrl:"signup.html",
-                controller:"SignUpController as SignUpCtrl"
-            })
             .state('li.termsAndAgreements', {
                 url:"/trash_terms_and_garabe_agreements",
                 templateUrl:'terms.html',
@@ -51,6 +41,16 @@ angular
                 url:"/user",
                 templateUrl:"user.html",
                 controller:"UserController as UserCtrl"
+            })
+            .state('login', {
+                url:"/login",
+                templateUrl:"login.html",
+                controller:"LoginController as LoginCtrl"
+            })
+            .state('signUp', {
+                url:"/signup",
+                templateUrl:"signup.html",
+                controller:"SignUpController as SignUpCtrl"
             });
     })
     .run(function($rootScope) {
