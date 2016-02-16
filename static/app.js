@@ -37,7 +37,7 @@ angular
                 templateUrl:"postview.html",
                 controller:"PostViewController as PostViewCtrl"
             })
-            .state('li.signUp', {
+            .state('signUp', {
                 url:"/signup",
                 templateUrl:"signup.html",
                 controller:"SignUpController as SignUpCtrl"
