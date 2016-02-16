@@ -1,6 +1,6 @@
 angular
     .module('app')
-    .controller('eDebateController', function($scope){
+    .controller('eDebateController', function(){
         $scope.navigation = [{current:'un-plebing code'}]
         $scope.pickTwo = [{optnOne: 'lemmings'}, {optnTwo: '2spooky4me'}]
         

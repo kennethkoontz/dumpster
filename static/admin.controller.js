@@ -1,6 +1,6 @@
 angular
     .module('app')
-    .controller('AdminController', function($scope){
+    .controller('AdminController', function(){
         $scope.admin=[
             {text: 'I shot a hole throught everything I loved'},
             {text: 'BA BA BOOOOM'},

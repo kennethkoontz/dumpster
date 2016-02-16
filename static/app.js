@@ -18,7 +18,7 @@ angular
               templateUrl: "feed.html",
               controller:"FeedController as FeedCtrl"
             })
-            .state('li',{
+            .state('li.loggedin',{
                 abstract:true,
                 templateUrl:'loggedin.html'
             })
@@ -37,12 +37,12 @@ angular
                 templateUrl:"postview.html",
                 controller:"PostViewController as PostViewCtrl"
             })
-            .state('signUp', {
+            .state('li.signUp', {
                 url:"/signup",
                 templateUrl:"signup.html",
                 controller:"SignUpController as SignUpCtrl"
             })
-            .state('termsAndAgreements', {
+            .state('li.termsAndAgreements', {
                 url:"/trash_terms_and_garabe_agreements",
                 templateUrl:'terms.html',
                 controller:"TermsController as TermsCtrl"

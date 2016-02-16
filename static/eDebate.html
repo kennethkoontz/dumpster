@@ -4,7 +4,7 @@
             <div  role="presentation" id="navSection1" class="nav col-xs-4 text-center">
                 <h5>VOTE ON THE NEXT TOPIC</h5>
 
-                <div ng-repeat='option in pickTwo' class="input-group-btn">
+                <div ng-repeat='option in eDebateCtrl.pickTwo' class="input-group-btn">
                     <button id="optOne" class="btn btn-default" type="button">{{option.optnOne}} {{option.optnTwo}}</button>
                 </div>
 
@@ -12,7 +12,7 @@
         </li>
 
         <li>
-            <div ng-repeat="topic in navigation" id="navSection2" class="nav col-xs-4 text-center">
+            <div ng-repeat="topic in eDebateCtrl.navigation" id="navSection2" class="nav col-xs-4 text-center">
                 <h5>Current Topic:</h5>
                 <h3>{{topic.current}}</h3>
             </div>
@@ -33,12 +33,12 @@
 
 <div style='padding-bottom: 70px;'>
     <h1>eDebate</h1>
-    <div ng-repeat='post in feed' class='post'>
+    <div ng-repeat='post in eDebateCtrl.feed' class='post'>
         <img style:'border:1px solid black;' src="{{post.profilePic}}" alt='User Profile'/>
         <p>{{post.text}}</p>
         
         <hr>
-            <div ng-show='response' ng-repeat='analytics in response'>
+            <div ng-show='response' ng-repeat='analytics in eDebateCtrl.response'>
                 <span>{{analytics.like}} people liked,
                 {{analytics.acknowledge}} people acknowledged,
                 {{analytics.dislike}} people disliked,
