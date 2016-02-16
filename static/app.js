@@ -6,17 +6,17 @@ angular
             .state('li.admin', {
                 url:"/admin",
                 templateUrl:"admin.html",
-                controller:"AdminController"
+                controller:"AdminController as AdminCtrl"
             })
             .state('li.eDebate', {
                 url:"/eDebate",
                 templateUrl:"eDebate.html",
-                controller:"eDebateController"
+                controller:"eDebateController as eDebateCtrl"
             })
             .state('li.feed', {
               url: "/feed",
               templateUrl: "feed.html",
-              controller:"FeedController"
+              controller:"FeedController as FeedCtrl"
             })
             .state('li',{
                 abstract:true,
@@ -25,32 +25,32 @@ angular
             .state('login', {
                 url:"/login",
                 templateUrl:"login.html",
-                controller:"LoginController"
+                controller:"LoginController as LoginCtrl"
             })
             .state('li.news', {
                 url:"/news",
                 templateUrl:"news.html",
-                controller:"NewsController"
+                controller:"NewsController as NewsCtrl"
             })
             .state('li.PostView', {
                 url:"/postview",
                 templateUrl:"postview.html",
-                controller:"PostViewController"
+                controller:"PostViewController as PostViewCtrl"
             })
             .state('signUp', {
                 url:"/signup",
                 templateUrl:"signup.html",
-                controller:"SignUpController"
+                controller:"SignUpController as SignUpCtrl"
             })
             .state('termsAndAgreements', {
                 url:"/trash_terms_and_garabe_agreements",
                 templateUrl:'terms.html',
-                controller:"TermsController"
+                controller:"TermsController as TermsCtrl"
             })
             .state('li.user', {
                 url:"/user",
                 templateUrl:"user.html",
-                controller:"UserController"
+                controller:"UserController as UserCtrl"
             });
     })
     .run(function($rootScope) {
