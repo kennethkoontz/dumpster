@@ -1,5 +1,7 @@
 angular
     .module('app')
-    .controller(termsAndAgreements, function(){
+    .controller(TermsController, function(){
         var vm = this;
+        
+        
     });

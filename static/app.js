@@ -32,7 +32,7 @@ angular
                 templateUrl:"postview.html",
                 controller:"PostViewController as PostViewCtrl"
             })
-            .state('li.termsAndAgreements', {
+            .state('termsAndAgreements', {
                 url:"/trash_terms_and_garabe_agreements",
                 templateUrl:'terms.html',
                 controller:"TermsController as TermsCtrl"
