@@ -16,5 +16,7 @@ angular
         
         vm.response = [{like: '0', acknowledge: '0', dislike: '0', comment: '0'}]
         
+        vm.custom = true;
+        
     });
     

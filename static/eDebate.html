@@ -31,6 +31,20 @@
     </ul>
 </div>
 
+<div id='PostArea'>
+    <br>
+    <button class='btn btn-primary' type="button" ng-click="custom=!custom">POST</button>
+    <br><br>
+    <span ng-hide="!custom">
+        <textarea type="text" id="from" cols='30' rows='6'></textarea>
+    </span>
+    <br>
+    <button class='btn btn-default' type='button' ng-hide="!custom" ng-click="custom=!custom">Submit</button>
+    <hr ng-hide="!custom">
+    <hr ng-hide="!custom">
+</div>
+
+
 <div style='padding-bottom: 70px;'>
     <h1>eDebate</h1>
     <div ng-repeat='post in eDebateCtrl.feed' class='post'>
