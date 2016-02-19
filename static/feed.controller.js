@@ -3,4 +3,6 @@ angular
     .controller('FeedController', function(){
         var vm = this;
         vm.feed = [{text: 'hello world'}, {text: 'test post'}, {text: 'another one'}]
+         vm.custom = true;
+        
     });
