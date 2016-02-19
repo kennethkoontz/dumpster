@@ -1,17 +1,18 @@
 <div class='container-fluid'>
+ <div class='row' ng-repeat='ads in TermsCtrl.terms'>
+  <div class='col-md-4' id='ads' >{{ads.text}}</div> 
+  <div class="col-md-4">{{ads.text}}</div>
+  <div class="col-md-4">{{ads.text}}</div>
+ </div>
+ <hr>
+ <div class='row' ng-repeat='ads in TermsCtrl.terms'>
+  <div class='col-md-4' id='ads' >{{ads.text}}</div> 
+  <div class="col-md-4">{{ads.text}}</div>
+  <div class="col-md-4">{{ads.text}}</div>
+ </div>
  <div class='row'>
-  <div class='col-md-12' id='ads' ng-repeat='ads in TermsCtrl.terms'>
-    <div id="content-slider">
-     <div id="slider">
-      <div id="mask">
-       
-      </div>
-     </div>
-  </div>
-</div>   
-<div class='row'>
- <div class='col-sm-2'></div>
- <div class='col-sm-8'><button type="submit">Done reading? Please continue with your life</button></div>
- <div class='col-sm-2'></div>
-</div>
-</div>   
+  <div class='col-md-4'></div>
+  <div class='col-md-4'><a ui-sref='signup'><button type='submit'>Done reading? Please cntinue with your life</button></a></div>
+  <div class='col-md-4'></div>
+ </div>
+</div> 

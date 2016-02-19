@@ -1,5 +1,5 @@
 angular
     .module('app')
-    .controller(LoginController, function(){
+    .controller('LoginController', function(){
         var vm = this;
     });

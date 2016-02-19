@@ -1,5 +1,4 @@
- 
- <div class='container-fluid'  ng-app='post'>
+ <div class='container-fluid'>
      <div class="row">
          <div class="col-sm-4">
              <div class='row'>
@@ -76,20 +75,18 @@
      <div class='row'>
         <div class="col-md-4"></div>
         <div class="col-md-4">
-          <div>
-            <input class="col-md-10" type="text" placeholder="DUMP DUMP DUMP"/>
-          </div>
-          <div class="row">
-            <div class="col-md-10"></div>
-            <div class="col-md-1">
-              <p>(5/7)</p>
-              </div>
-            <div class="col-md-1">
-              <button>
-                submit
-              </button>
-            </div>
-          </div>
+          <div id='PostArea'>
+    <br>
+    <button class='btn btn-primary' type="button" ng-click="custom=!custom">POST</button>
+    <br><br>
+    <span ng-hide="!custom">
+        <textarea type="text" id="from" cols='30' rows='6'></textarea>
+    </span>
+    <br>
+    <button class='btn btn-default' type='button' ng-hide="!custom" ng-click="custom=!custom">Submit</button>
+    <hr ng-hide="!custom">
+    <hr ng-hide="!custom">
+</div>
         </div>
         <div class="col-md-4"></div>
       </div>
