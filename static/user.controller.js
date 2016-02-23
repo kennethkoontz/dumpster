@@ -2,5 +2,5 @@ angular
     .module('app')
     .controller('UserController', function(){
         var vm = this;
-        $scope.user = [{text: 'hello world'}, {text: 'test post'}, {text: 'another one'}]
+        vm.user = [{text: 'hello world'}, {text: 'test post'}, {text: 'another one'}]
     });
