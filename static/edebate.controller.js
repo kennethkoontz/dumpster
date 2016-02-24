@@ -13,14 +13,18 @@ angular
             {text: 'i appreciate that', profilePic: 'images/userProfileExample.png'},
             {text:'you is smawt', profilePic: 'images/100x100profileImage.gif'}
         ]
+        
+        vm.text = function(){
+            
+        };
+        
         vm.addPost = function(){
             // if(!vm.title || vm.title ==="") {return;};
             vm.feed.push({
-                // text: ,
+                text: vm.text ,
                 profilePic:'images/100x100profileImage.gif',
             });
             
-            // vm.text='';
         };
         
         vm.response = [{like: '0', acknowledge: '0', dislike: '0', comment: '0'}]
