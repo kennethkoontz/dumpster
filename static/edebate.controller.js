@@ -19,7 +19,7 @@ angular
         };
         
         vm.addPost = function(){
-            // if(!vm.title || vm.title ==="") {return;};
+            if(!vm.title || vm.title === "") {return;};
             vm.feed.push({
                 text: vm.text ,
                 profilePic:'images/100x100profileImage.gif',
