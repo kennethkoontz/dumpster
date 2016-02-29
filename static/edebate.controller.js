@@ -18,14 +18,10 @@ angular
           document.getElementsByTagName.textarea.value;  
         };
         
-        vm.text = function(){
-            
-        }
-        
         vm.addPost = function(){
-            if(!vm.text || vm.text === "") {return}
+            // if(!vm.text || vm.text === "") {return}
             vm.feed.push({
-                text: vm.text ,
+                text: vm.postText,
                 profilePic:'images/100x100profileImage.gif',
             });
             
