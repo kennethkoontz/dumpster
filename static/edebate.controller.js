@@ -12,14 +12,18 @@ angular
             {text: 'another one', profilePic: 'images/100x100profileImage.gif'},
             {text: 'i appreciate that', profilePic: 'images/userProfileExample.png'},
             {text:'you is smawt', profilePic: 'images/100x100profileImage.gif'}
-        ]
+        ];
+        
+        vm.postText = function(){
+          document.getElementsByTagName.textarea.value;  
+        };
         
         vm.text = function(){
             
-        };
+        }
         
         vm.addPost = function(){
-            if(!vm.title || vm.title === "") {return;};
+            if(!vm.text || vm.text === "") {return}
             vm.feed.push({
                 text: vm.text ,
                 profilePic:'images/100x100profileImage.gif',
@@ -27,7 +31,7 @@ angular
             
         };
         
-        vm.response = [{like: '0', acknowledge: '0', dislike: '0', comment: '0'}]
+        vm.response = [{like: '0', acknowledge: '0', dislike: '0', comment: '0'}];
         
         vm.custom = true;
         
