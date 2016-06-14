@@ -1,6 +1,8 @@
+//angular scripting for user initial signup tab
+
 angular
     .module('app')
     .controller('SignUpController', function() {
-        var vm = self;
+        var vm = this;
        
     });

@@ -1,3 +1,5 @@
+//angular scripting for generic user tab
+
 angular
     .module('app')
     .controller('UserController', function(){

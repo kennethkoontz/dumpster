@@ -1,3 +1,5 @@
+//angular scripting for eDebate tab
+
 angular
     .module('app')
     .controller('eDebateController', function(){

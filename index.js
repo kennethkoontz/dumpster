@@ -1,3 +1,5 @@
+//setup enabling express middleware and url route template
+
 var express = require('express');
 var app = express();
 

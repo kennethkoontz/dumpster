@@ -1,3 +1,5 @@
+//angular scripting for admin tab
+
 angular
     .module('app')
     .controller('AdminController', function(){

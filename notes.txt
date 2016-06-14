@@ -1,0 +1,8 @@
+Just a few things to keep in mind:
+
+overall:
+    Comment your crap from now on!
+
+in the angular controllers:
+    "var vm = this" simply replaces "$scope"
+

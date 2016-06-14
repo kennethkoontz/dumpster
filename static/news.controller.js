@@ -1,3 +1,5 @@
+//angular scripting for app news tab
+
 angular
     .module('app')
     .controller('NewsController', function(){

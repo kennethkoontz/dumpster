@@ -1,3 +1,5 @@
+<!--user interface "visual" for eDebate tab-->
+
 <div role="navigation" id="reactiveNav" class="navbar navbar-default navbar-fixed-bottom">
     <ul class="nav">
         <li>
@@ -60,7 +62,7 @@
     
     <!--preloaded stories-->
     <div ng-repeat='post in eDebateCtrl.feed' class='post'>
-        <img style:'border:1px solid black;' src="{{post.profilePic}}" alt='User Profile'/>
+        <img class="icon" src="{{post.profilePic}}" alt='User Profile'/>
         <p>{{post.text}}</p>
         
         <hr>
